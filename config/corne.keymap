@@ -51,19 +51,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q            &kp W            &kp E              &kp R         &kp T        &kp Y           &kp U         &kp I          &kp O        &kp P                &kp LEFT_BRACKET
-&mt LCTRL TAB  &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &kp G        &kp H           &hrm RCTRL J  &hrm RSHFT K   &hrm RALT L  &hrm RGUI SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z            &kp X            &kp C              &kp V         &kp B        &kp N           &kp M         &kp COMMA      &kp DOT      &kp FSLH             &mt RSHIFT ENTER
-                                                 &kp LALT           &mo 2         &kp SPACE    &kp RIGHT_META  &mo 3         &kp BACKSPACE
+&kp ESCAPE     &kp Q            &kp W            &kp E              &kp R         &kp T        &kp Y      &kp U         &kp I          &kp O        &kp P                &kp LEFT_BRACKET
+&mt LCTRL TAB  &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LCTRL F  &kp G        &kp H      &hrm RCTRL J  &hrm RSHFT K   &hrm RALT L  &hrm RGUI SEMICOLON  &kp SQT
+&kp LSHFT      &kp Z            &kp X            &kp C              &kp V         &kp B        &kp N      &kp M         &kp COMMA      &kp DOT      &kp FSLH             &kp RG(SPACE)
+                                                 &kp LALT           &mo 2         &kp SPACE    &kp ENTER  &mo 3         &kp BACKSPACE
             >;
         };
 
         game_layer {
             bindings = <
-&mt TAB ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y           &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F  &kp G        &kp H           &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N           &kp M  &kp COMMA      &kp DOT  &kp FSLH  &mt RSHIFT ENTER
-                              &kp LALT  &mo 2  &kp SPACE    &kp RIGHT_META  &mo 3  &kp BACKSPACE
+&mt TAB ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RG(SPACE)
+                              &kp LALT  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp BACKSPACE
             >;
         };
 
@@ -75,10 +75,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1           &kp N2        &kp N3        &kp N4        &kp N5          &kp CARET         &kp AMPERSAND      &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans     &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp MINUS         &kp EQUAL          &kp EXCLAMATION  &kp ASTERISK          &kp SEMICOLON          &kp SINGLE_QUOTE
-&trans     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COMMA        &kp DOT               &kp SLASH              &trans
-                                          &trans        &trans        &trans          &trans            &mo 4              &kp DELETE
+&kp GRAVE  &kp N1             &kp N2       &kp N3        &kp N4        &kp N5          &kp LESS_THAN         &kp GT                 &kp AMPS    &kp PIPE   &kp STAR       &kp BACKSLASH
+&trans     &mt LGUI NUMBER_6  &mt LALT N7  &mt LSHFT N8  &mt LCTRL N9  &kp NUMBER_0    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS    &kp MINUS  &kp SEMICOLON  &kp SINGLE_QUOTE
+&trans     &kp EXCLAMATION    &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL   &kp UNDER  &kp SLASH      &kp CARET
+                                           &trans        &trans        &trans          &trans                &mo 4                  &kp DELETE
             >;
         };
 
@@ -90,18 +90,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&tog 1      &kp F1  &kp F2   &kp F3   &kp F4   &kp LA(LC(T))    &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &kp C_STOP        &kp K_MUTE
-&caps_word  &kp F5  &kp F6   &kp F7   &kp F8   &kp LS(LG(S))    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
-&trans      &kp F9  &kp F10  &kp F11  &kp F12  &kp LA(SPACE)    &kp LC(Z)     &kp LC(C)     &kp LC(V)   &kp LC(Y)      &kp LC(X)         &kp C_VOLUME_DOWN
-                             &trans   &mo 4    &trans           &trans        &trans        &trans
+&tog 1      &kp F1       &kp F2       &kp F3        &kp F4        &kp LA(LC(T))    &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &kp C_STOP        &kp C_VOLUME_UP
+&caps_word  &mt LGUI F5  &mt LALT F6  &mt LSHFT F7  &mt LCTRL F8  &kp LS(LG(S))    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp C_PLAY_PAUSE  &kp K_MUTE
+&trans      &kp F9       &kp F10      &kp F11       &kp F12       &kp LA(SPACE)    &kp LC(Z)     &kp LC(C)     &kp LC(V)   &kp LC(Y)      &kp LC(X)         &kp C_VOLUME_DOWN
+                                      &trans        &mo 4         &trans           &trans        &trans        &trans
             >;
         };
 
         BLT {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&none       &none         &none         &none         &trans        &none           &none   &none   &none   &none   &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &trans  &none  &bt BT_CLR_ALL
+&none       &none         &none         &none         &none         &none           &none   &none   &none   &none   &none  &none
                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
